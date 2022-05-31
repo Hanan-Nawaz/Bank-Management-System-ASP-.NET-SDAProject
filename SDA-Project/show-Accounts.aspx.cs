@@ -22,18 +22,27 @@ namespace SDA_Project
         {
             int accesslvl = Convert.ToInt32(Session["Accesslvl"]);
 
-            if (Session["Email"] == null && accesslvl == 1)
+            if (Session["Email"] == null)
             {
                 Response.Redirect("Login.aspx");
             }
-            Session.Timeout = 60;
-
-            
-
-            if (!Page.IsPostBack)
+            else if(accesslvl == 1)
             {
-                BindGrid();
+                
+                    Response.Redirect("Dashboard.aspx");     
             }
+            else
+            {
+                Session.Timeout = 60;
+
+
+
+                if (!Page.IsPostBack)
+                {
+                    BindGrid();
+                }
+            }
+            
         }
 
         private string SortDirection

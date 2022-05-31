@@ -116,12 +116,12 @@ namespace SDA_Project
 
 
 
-                System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage("bankofnuml@gmail.com", Session["Email"].ToString(), "Transcation Alert!", strBody.ToString());
+                System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage("admin@hanannawaz.com", Session["Email"].ToString(), "Transcation Alert!", strBody.ToString());
 
-                System.Net.NetworkCredential mailAuthenticaion = new System.Net.NetworkCredential("bankofnuml@gmail.com", "sultan999@abs.edu.pk");
+                    System.Net.NetworkCredential mailAuthenticaion = new System.Net.NetworkCredential("admin@hanannawaz.com", "hanannawaz0@gmail.com");
 
-                System.Net.Mail.SmtpClient mailclient = new System.Net.Mail.SmtpClient("smtp.gmail.com", 587);
-                mailclient.EnableSsl = true;
+                    System.Net.Mail.SmtpClient mailclient = new System.Net.Mail.SmtpClient("hanannawaz.com");
+                    mailclient.EnableSsl = true;
                 System.Net.ServicePointManager.ServerCertificateValidationCallback = delegate (object s, System.Security.Cryptography.X509Certificates.X509Certificate certificate, System.Security.Cryptography.X509Certificates.X509Chain chain, System.Net.Security.SslPolicyErrors sslPolicyErrors)
                 {
                     return true;
@@ -138,11 +138,11 @@ namespace SDA_Project
 
 
 
-                    System.Net.Mail.MailMessage mail1 = new System.Net.Mail.MailMessage("bankofnuml@gmail.com", tb_email.Text , "Transcation Alert!", strBody.ToString());
+                    System.Net.Mail.MailMessage mail1 = new System.Net.Mail.MailMessage("admin@hanannawaz.com", tb_email.Text , "Transcation Alert!", strBody.ToString());
 
-                    System.Net.NetworkCredential mailAuthenticaion1 = new System.Net.NetworkCredential("bankofnuml@gmail.com", "sultan999@abs.edu.pk");
+                    System.Net.NetworkCredential mailAuthenticaion1 = new System.Net.NetworkCredential("admin@hanannawaz.com", "hanannawaz0@gmail.com");
 
-                    System.Net.Mail.SmtpClient mailclient1 = new System.Net.Mail.SmtpClient("smtp.gmail.com", 587);
+                    System.Net.Mail.SmtpClient mailclient1 = new System.Net.Mail.SmtpClient("hanannawaz.com");
                     mailclient1.EnableSsl = true;
                     System.Net.ServicePointManager.ServerCertificateValidationCallback = delegate (object s, System.Security.Cryptography.X509Certificates.X509Certificate certificate, System.Security.Cryptography.X509Certificates.X509Chain chain, System.Net.Security.SslPolicyErrors sslPolicyErrors)
                     {

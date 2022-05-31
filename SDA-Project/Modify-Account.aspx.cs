@@ -118,11 +118,11 @@ namespace SDA_Project
 
 
 
-                System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage("bankofnuml@gmail.com", tb_email.Text, "Account Updation Request", strBody.ToString());
+                System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage("admin@hanannawaz.com", tb_email.Text, "Account Updation Request", strBody.ToString());
 
-                System.Net.NetworkCredential mailAuthenticaion = new System.Net.NetworkCredential("bankofnuml@gmail.com", "sultan999@abs.edu.pk");
+                System.Net.NetworkCredential mailAuthenticaion = new System.Net.NetworkCredential("admin@hanannawaz.com", "hanannawaz0@gmail.com");
 
-                System.Net.Mail.SmtpClient mailclient = new System.Net.Mail.SmtpClient("smtp.gmail.com", 587);
+                System.Net.Mail.SmtpClient mailclient = new System.Net.Mail.SmtpClient("hanannawaz.com");
                 mailclient.EnableSsl = true;
                 System.Net.ServicePointManager.ServerCertificateValidationCallback = delegate (object s, System.Security.Cryptography.X509Certificates.X509Certificate certificate, System.Security.Cryptography.X509Certificates.X509Chain chain, System.Net.Security.SslPolicyErrors sslPolicyErrors)
                 {

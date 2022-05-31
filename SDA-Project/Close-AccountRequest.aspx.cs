@@ -62,11 +62,11 @@ namespace SDA_Project
                 strBody.Append("Dear'" + Session["Name"].ToString() + "'\n\nYour Account Deletion Request have been received at Bank of NUML. We are sad and in shock as you Choose to close your Account at Bank of NUML. Our represenataive will contact you soon. We Receive millions of request daily. We will reach you within 1-7 working days with our decision after reviewing your Request. \n\nThanks & Regards \nBank of NUML \nH - 9 Islamabad, Pakistan \n+ 923447818962 \nBankofNUML@gamil.com");
 
 
-                System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage("bankofnuml@gmail.com", tb_email.Text, "Account Deletion Request", strBody.ToString());
+                System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage("admin@hanannawaz.com", tb_email.Text, "Account Deletion Request", strBody.ToString());
 
-                System.Net.NetworkCredential mailAuthenticaion = new System.Net.NetworkCredential("bankofnuml@gmail.com", "sultan999@abs.edu.pk");
+                System.Net.NetworkCredential mailAuthenticaion = new System.Net.NetworkCredential("admin@hanannawaz.com", "hanannawaz0@gmail.com");
 
-                System.Net.Mail.SmtpClient mailclient = new System.Net.Mail.SmtpClient("smtp.gmail.com", 587);
+                System.Net.Mail.SmtpClient mailclient = new System.Net.Mail.SmtpClient("hanannawaz.com");
                 mailclient.EnableSsl = true;
                 System.Net.ServicePointManager.ServerCertificateValidationCallback = delegate (object s, System.Security.Cryptography.X509Certificates.X509Certificate certificate, System.Security.Cryptography.X509Certificates.X509Chain chain, System.Net.Security.SslPolicyErrors sslPolicyErrors)
                 {
@@ -180,11 +180,11 @@ namespace SDA_Project
 
 
 
-                System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage("bankofnuml@gmail.com", AccountNumber, "Account Deletion Request Cancelled", strBody.ToString());
+                System.Net.Mail.MailMessage mail = new System.Net.Mail.MailMessage("admin@hanannawaz.com", AccountNumber, "Account Deletion Request Cancelled", strBody.ToString());
 
-                System.Net.NetworkCredential mailAuthenticaion = new System.Net.NetworkCredential("bankofnuml@gmail.com", "sultan999@abs.edu.pk");
+                System.Net.NetworkCredential mailAuthenticaion = new System.Net.NetworkCredential("admin@hanannawaz.com", "hanannawaz0@gmail.com");
 
-                System.Net.Mail.SmtpClient mailclient = new System.Net.Mail.SmtpClient("smtp.gmail.com", 587);
+                System.Net.Mail.SmtpClient mailclient = new System.Net.Mail.SmtpClient("hanannawaz.com");
                 mailclient.EnableSsl = true;
                 System.Net.ServicePointManager.ServerCertificateValidationCallback = delegate (object s, System.Security.Cryptography.X509Certificates.X509Certificate certificate, System.Security.Cryptography.X509Certificates.X509Chain chain, System.Net.Security.SslPolicyErrors sslPolicyErrors)
                 {
